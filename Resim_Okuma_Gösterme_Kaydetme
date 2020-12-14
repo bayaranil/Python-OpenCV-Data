@@ -1,0 +1,11 @@
+import cv2 # opencv kütüphanesini dahil eder
+
+img = cv2.imread("klon.jpg")      #resmi okuduk
+#print(img) resmin matrisi yazar
+
+  cv2.namedWindow("klon_image",cv2.WINDOW_NORMAL) #klon_image adında bir pencere oluşturur, türü normal.
+cv2.imshow("klon_image",img)  #resmi gösterdi  
+cv2.imwrite("klon1.jpg",img)
+print(img.shape)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
